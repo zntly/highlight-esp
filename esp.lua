@@ -13,8 +13,7 @@ if getgenv().enabled == true then
 end
 while getgenv().enabled do
     task.wait()
-    for i,v in pairs(game.Players:GetChildren()) do
-        print("checked")
+    for _,v in pairs(game.Players:GetChildren()) do
         local chr = v.Character
         if chr ~= nil then
         local esp = holder:FindFirstChild(v.Name) or Instance.new("Highlight")
